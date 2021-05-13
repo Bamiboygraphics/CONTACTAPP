@@ -18,11 +18,11 @@ User can:
 ## Routes
 | Method  | URL | Description |
 | :--- | :--- | :--- |
-| `POST`  | /contact/  | create contact  |
-| `GET`  | /contact  | fetch all contacts  |
-| `GET`  | /contact/:id  | fetch a single contact by Id  |
-| `PUT`  | /contact/:id  | Updates an existing contact by Id  |
-| `DELETE`  | /contact/:id  | delete an existing contact by Id  |
+| `POST`  | /  | create contact  |
+| `GET`  | /  | fetch all contacts  |
+| `GET`  | /:id  | fetch a single contact by Id  |
+| `PUT`  | /:id  | Updates an existing contact by Id  |
+| `DELETE`  | /:id  | delete an existing contact by Id  |
 
 
 ## Contact App Structure
@@ -31,12 +31,12 @@ User can:
  ├── package-lock.json
  ├── package.json
  ├── Readme.md
+ ├── .env
  └─> src
      ├── app.js
      ├─> controllers
      │   └── contactController.js
      ├─> database
-     │   ├── config.env
      │   └── setup.js
      ├─> models
      │   └── contact.js
