@@ -66,7 +66,7 @@ Install dependencies
 ```
 ## Env Variables
 To run this project, you will need to add the following environment variables to your .env file following the sample in the ```config.env``` file
-`DATABASE`, `DATABASE_PASSWORD`
+`dbURI`
 
 Start the server
 

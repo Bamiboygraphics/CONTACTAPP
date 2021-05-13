@@ -1,16 +1,24 @@
 // SET UP EXPRESS APP
 const express = require('express');
 const app = express();
-app.use(express.json());
+
+// IMPORTS
+require("dotenv").config()
+const contactRoutes = require ('./routes/contactRoutes')
+const dbSetup = require ('./database/setup')
+
 
 // DB COONNECTION & SERVER
-const dbSetup = require ('./database/setup')
 dbSetup ()
 
-//USE ROUTES
-const contactRoutes = require ('./routes/contactRoutes')
-app.use(contactRoutes)
+
+// MIDDLEWARE
+app.use(express.json());
+app.use(contactRoutes)    //USE ROUTES
 
 
-// EXPORTS
-module.exports = app;
+//SET PORT
+const port = process.env.PORT || 5501;
+
+//APP LISTENS FOR REQUESTS
+app.listen(port, () => console.log(`app is listening on port ${port}`))
