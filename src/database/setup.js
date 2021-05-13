@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 
 
 // SET ENV variables in dotenv
-const dotenv = require('dotenv').config();
+const dotenv = require('dotenv')
+dotenv.config();
 
-const { dbURI } = process.env
-
+const {dbURI} = process.env
 // DB CONNECTIONS
 const dbSetup = () => {
   mongoose

@@ -50,7 +50,7 @@ User can:
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Bamiboygraphics/CONTACTAPP.git
 ```
 
 Go to the project directory
@@ -76,7 +76,7 @@ Start the server
 ```
 ## Herouku App
 The API is hosted on heroku.
-[Click to view.](https://link-to-project)
+[Click to view.](https://bami-contact-app.herokuapp.com/)
   
 ### **Tech Stack**
 

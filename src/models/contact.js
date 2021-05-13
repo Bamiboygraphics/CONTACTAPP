@@ -23,8 +23,9 @@ const contactSchema = new mongoose.Schema({
     type: String,
     enum: ['friend', 'family', 'worker', 'classmate', 'others'],
     default : "others"
-  },
-});
+  }, 
+}, 
+);
 
 //MODELS
 const Contact = mongoose.model('Contact', contactSchema);
