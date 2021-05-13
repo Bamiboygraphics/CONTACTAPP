@@ -16,13 +16,6 @@ dbSetup ()
 app.use(express.json());
 app.use(contactRoutes)    //USE ROUTES
 
-app.get('/', (req, res) => {
-    res
-    .status(200)
-    .send ("T")
-})
-
-
 //SET PORT
 const PORT  = process.env.PORT;
 const port = PORT|| PORT;

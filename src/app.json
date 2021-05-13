@@ -1,8 +1,0 @@
-{
-    "env": {
-      "dbURI": {
-        "description": "A string to connect to my database",
-        "generator": "mongodb+srv://Bamiboy:0cswFEgKPEsWbn6q@nodejs.jprxo.mongodb.net/Contactapp?retryWrites=true&w=majority"
-      }
-    }
-}
