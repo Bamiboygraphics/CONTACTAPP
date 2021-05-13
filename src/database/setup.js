@@ -5,13 +5,14 @@ const mongoose = require('mongoose');
 // SET ENV variables in dotenv
 const dotenv = require('dotenv').config();
 
-const dbURI = `${process.env.dbURI}`;
+const { dbURI } = process.env
 
 // DB CONNECTIONS
 const dbSetup = () => {
   mongoose
   .connect(dbURI, {
     useNewUrlParser: true,
+    useCreateIndex: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
   })

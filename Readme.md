@@ -66,7 +66,8 @@ Install dependencies
 ```
 ## Env Variables
 To run this project, you will need to add the following environment variables to your .env file following the sample in the ```config.env``` file
-`dbURI`
+
+`dbURI`, `PORT`
 
 Start the server
 
